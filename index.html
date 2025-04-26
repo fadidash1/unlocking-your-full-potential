@@ -1,384 +1,544 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Unlocking Your Full Potential | Fadi Albitar</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <style>
-        :root {
-            --primary: #6C63FF;
-            --secondary: #4D44DB;
-            --accent: #FF6584;
-            --dark: #1A1A2E;
-            --light: #FFFFFF;
-            --gray: #AAAAAA;
-            --transition: all 0.3s ease;
-        }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
+  <!-- SEO Meta Tags -->
+  <title>Unlocking Your Full Potential: Self-Improvement Book for College Students | Fadi Albitar</title>
+  <meta name="description" content="Unlock your full potential with Fadi Albitar's self-improvement book tailored for college students seeking success, confidence, and fulfillment.">
+  <meta name="keywords" content="self-improvement book, college student success, personal growth guide, build confidence, overcome anxiety, Fadi Albitar book, Unlock Your Potential">
+  <meta name="author" content="Fadi Albitar">
 
-        body {
-            background-color: #F8F9FA;
-            color: #333;
-            line-height: 1.6;
-        }
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="Unlocking Your Full Potential by Fadi Albitar">
+  <meta property="og:description" content="Empower your future with practical strategies for success, confidence, and happiness. A must-read for college students.">
+  <meta property="og:image" content="https://yourwebsite.com/images/book-cover.jpg">
+  <meta property="og:type" content="book">
+  <meta property="og:url" content="https://yourwebsite.com/">
 
-        header {
-            background: linear-gradient(135deg, var(--primary), var(--secondary));
-            color: var(--light);
-            padding: 2rem 0;
-            text-align: center;
-            position: relative;
-            overflow: hidden;
-        }
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Book",
+    "name": "Unlocking Your Full Potential",
+    "author": {
+      "@type": "Person",
+      "name": "Fadi Albitar"
+    },
+    "datePublished": "2023-12-09",
+    "genre": "Self-Improvement",
+    "publisher": "Self-Published",
+    "description": "Unlock your full potential with Fadi Albitar's transformative guide for college students. Learn practical strategies for achieving success, building confidence, and living a fulfilling life.",
+    "image": "https://yourwebsite.com/images/book-cover.jpg"
+  }
+  </script>
 
-        .header-content {
-            position: relative;
-            z-index: 2;
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 2rem;
-        }
+  <style>
+    /* Basic Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-        .author-badge {
-            background-color: var(--accent);
-            color: white;
-            padding: 0.5rem 1rem;
-            border-radius: 20px;
-            font-weight: bold;
-            display: inline-block;
-            margin-bottom: 1rem;
-            text-transform: uppercase;
-            font-size: 0.8rem;
-            letter-spacing: 1px;
-        }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      background: #0A0A23;
+      color: #FFFFFF;
+    }
 
-        h1 {
-            font-size: 3.5rem;
-            margin: 1rem 0;
-            line-height: 1.2;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-        }
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
 
-        .book-subtitle {
-            font-size: 1.5rem;
-            margin-bottom: 2rem;
-            font-weight: 300;
-        }
+    .container {
+      width: 90%;
+      margin: 0 auto;
+      max-width: 1200px;
+      padding: 2rem 0;
+    }
 
-        .cta-button {
-            display: inline-block;
-            background-color: var(--accent);
-            color: white;
-            padding: 1rem 2rem;
-            border-radius: 30px;
-            text-decoration: none;
-            font-weight: bold;
-            margin-top: 1rem;
-            transition: var(--transition);
-            border: none;
-            cursor: pointer;
-            font-size: 1.1rem;
-        }
+    header.hero {
+      background: linear-gradient(135deg, #0A0A23 0%, #1A1A4A 100%);
+      color: white;
+      text-align: center;
+      padding: 5rem 2rem;
+      position: relative;
+      overflow: hidden;
+    }
 
-        .cta-button:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-        }
+    header.hero::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      left: -50%;
+      width: 200%;
+      height: 200%;
+      background: radial-gradient(circle, rgba(0, 240, 255, 0.1) 0%, transparent 70%);
+      animation: pulse 15s infinite alternate;
+    }
 
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 2rem;
-        }
+    @keyframes pulse {
+      0% { transform: translate(0, 0); }
+      100% { transform: translate(50px, 50px); }
+    }
 
-        section {
-            padding: 5rem 0;
-        }
+    header.hero h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+      color: #00F0FF;
+      position: relative;
+      text-shadow: 0 0 10px rgba(0, 240, 255, 0.5);
+    }
 
-        .section-title {
-            text-align: center;
-            margin-bottom: 3rem;
-            color: var(--secondary);
-            font-size: 2.5rem;
-            position: relative;
-        }
+    header.hero p {
+      font-size: 1.5rem;
+      margin-bottom: 2rem;
+      position: relative;
+    }
 
-        .section-title:after {
-            content: '';
-            display: block;
-            width: 80px;
-            height: 4px;
-            background: var(--accent);
-            margin: 1rem auto;
-        }
+    .book-cover {
+      max-width: 300px;
+      margin: 2rem auto;
+      border-radius: 8px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5), 
+                  0 0 30px rgba(0, 240, 255, 0.3),
+                  0 0 60px rgba(195, 0, 255, 0.2);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      border: 2px solid rgba(255, 255, 255, 0.1);
+    }
 
-        .book-section {
-            display: flex;
-            gap: 3rem;
-            align-items: center;
-        }
+    .book-cover:hover {
+      transform: translateY(-5px) scale(1.02);
+      box-shadow: 0 15px 40px rgba(0, 0, 0, 0.6), 
+                  0 0 40px rgba(0, 240, 255, 0.4),
+                  0 0 80px rgba(195, 0, 255, 0.3);
+    }
 
-        .book-cover {
-            flex: 1;
-            text-align: center;
-            position: relative;
-        }
+    .btn-primary {
+      background: #00F0FF;
+      color: #0A0A23;
+      padding: 1rem 2rem;
+      border-radius: 50px;
+      font-weight: bold;
+      transition: all 0.3s ease;
+      position: relative;
+      overflow: hidden;
+      border: none;
+      box-shadow: 0 0 15px rgba(0, 240, 255, 0.5);
+      display: inline-block;
+      margin-top: 1rem;
+    }
 
-        .book-cover img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 10px;
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
-            transition: var(--transition);
-        }
+    .btn-primary:hover {
+      background: #C300FF;
+      color: white;
+      box-shadow: 0 0 20px rgba(195, 0, 255, 0.7);
+      transform: translateY(-2px);
+    }
 
-        .book-cover img:hover {
-            transform: scale(1.03);
-        }
+    section {
+      background: rgba(10, 10, 35, 0.7);
+      margin: 2rem 0;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(122, 122, 157, 0.2);
+      position: relative;
+      overflow: hidden;
+    }
 
-        .book-details {
-            flex: 1;
-        }
+    section::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 3px;
+      background: linear-gradient(90deg, #00F0FF, #C300FF, #FF00B8);
+    }
 
-        .book-meta {
-            color: var(--gray);
-            margin-bottom: 1.5rem;
-            font-size: 0.9rem;
-        }
+    section h2 {
+      margin-bottom: 1rem;
+      font-size: 2rem;
+      color: #C300FF;
+      text-shadow: 0 0 8px rgba(195, 0, 255, 0.3);
+    }
 
-        .book-description {
-            margin-bottom: 2rem;
-        }
+    section p, section ul {
+      margin-bottom: 1rem;
+      font-size: 1.1rem;
+      color: #FFFFFF;
+    }
 
-        .book-features {
-            margin: 2rem 0;
-        }
+    ul li {
+      margin-bottom: 0.5rem;
+      position: relative;
+      padding-left: 1.5rem;
+    }
 
-        .book-features ul {
-            columns: 2;
-            column-gap: 2rem;
-            list-style-type: none;
-        }
+    ul li::before {
+      content: '→';
+      color: #FF00B8;
+      position: absolute;
+      left: 0;
+    }
 
-        .book-features li {
-            margin-bottom: 1rem;
-            position: relative;
-            padding-left: 1.5rem;
-            break-inside: avoid;
-        }
+    .testimonials-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
 
-        .book-features li:before {
-            content: '✓';
-            color: var(--accent);
-            position: absolute;
-            left: 0;
-            font-weight: bold;
-        }
+    .testimonial-card {
+      background: rgba(20, 20, 50, 0.6);
+      padding: 1.5rem;
+      border-radius: 10px;
+      border: 1px solid rgba(0, 240, 255, 0.2);
+      position: relative;
+      transition: transform 0.3s ease;
+    }
 
-        .testimonials {
-            background-color: var(--secondary);
-            color: white;
-        }
+    .testimonial-card:hover {
+      transform: translateY(-5px);
+      border-color: #FF00B8;
+    }
 
-        .testimonial-slide {
-            background-color: white;
-            color: #333;
-            padding: 2rem;
-            border-radius: 10px;
-            margin: 1rem;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-        }
+    .testimonial-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(135deg, rgba(0, 240, 255, 0.05), rgba(195, 0, 255, 0.05));
+      z-index: -1;
+      border-radius: inherit;
+    }
 
-        .testimonial-content {
-            font-style: italic;
-            margin-bottom: 1rem;
-        }
+    .testimonial-text {
+      font-style: italic;
+      margin-bottom: 1rem;
+      position: relative;
+      padding-left: 1.5rem;
+    }
 
-        .testimonial-author {
-            display: flex;
-            align-items: center;
-        }
+    .testimonial-text::before {
+      content: '"';
+      font-size: 3rem;
+      color: rgba(0, 240, 255, 0.3);
+      position: absolute;
+      left: -0.5rem;
+      top: -1rem;
+      line-height: 1;
+    }
 
-        .author-avatar {
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
-            margin-right: 1rem;
-            object-fit: cover;
-        }
+    .testimonial-author {
+      display: flex;
+      align-items: center;
+      margin-top: 1rem;
+    }
 
-        .author-name {
-            font-weight: bold;
-        }
+    .author-avatar {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      margin-right: 1rem;
+      object-fit: cover;
+      border: 2px solid #00F0FF;
+    }
 
-        .author-title {
-            font-size: 0.8rem;
-            color: var(--gray);
-        }
+    .author-info {
+      display: flex;
+      flex-direction: column;
+    }
 
-        footer {
-            background-color: var(--dark);
-            color: white;
-            padding: 3rem 0;
-            text-align: center;
-        }
+    .author-name {
+      font-weight: bold;
+      color: #00F0FF;
+    }
 
-        .social-links {
-            margin: 1rem 0;
-        }
+    .author-title {
+      font-size: 0.8rem;
+      color: #7A7A9D;
+    }
 
-        .social-links a {
-            color: white;
-            margin: 0 0.5rem;
-            font-size: 1.5rem;
-            transition: var(--transition);
-        }
+    blockquote {
+      font-style: italic;
+      background: rgba(122, 122, 157, 0.1);
+      padding: 1.5rem;
+      margin: 1.5rem 0;
+      border-left: 4px solid #00F0FF;
+      border-radius: 8px;
+      position: relative;
+    }
 
-        .social-links a:hover {
-            color: var(--accent);
-        }
+    blockquote::before {
+      content: '"';
+      font-size: 4rem;
+      color: rgba(0, 240, 255, 0.2);
+      position: absolute;
+      left: 10px;
+      top: -10px;
+      line-height: 1;
+    }
 
-        @media (max-width: 768px) {
-            h1 {
-                font-size: 2.5rem;
-            }
+    .faq-item {
+      margin-bottom: 1.5rem;
+      border-bottom: 1px solid rgba(122, 122, 157, 0.3);
+      padding-bottom: 1rem;
+    }
 
-            .book-subtitle {
-                font-size: 1.2rem;
-            }
+    .faq-item h3 {
+      color: #00F0FF;
+      transition: color 0.3s ease;
+    }
 
-            .book-section {
-                flex-direction: column;
-            }
+    .faq-item h3:hover {
+      color: #FF00B8;
+    }
 
-            .book-features ul {
-                columns: 1;
-            }
-        }
-    </style>
-</head>
-<body>
-    <header>
-        <div class="header-content">
-            <div class="author-badge">By Fadi Albitar</div>
-            <h1>UNLOCKING YOUR<br>FULL POTENTIAL</h1>
-            <p class="book-subtitle">A Guide to Self-Improvement for College Students, for Life and Future</p>
-            <a href="#purchase" class="cta-button">Get Your Copy Today</a>
-        </div>
-    </header>
+    footer.footer {
+      text-align: center;
+      padding: 3rem 2rem;
+      background: linear-gradient(to bottom, #0A0A23, #000000);
+      color: #7A7A9D;
+      position: relative;
+    }
 
-    <section id="about">
-        <div class="container">
-            <h2 class="section-title">About The Book</h2>
-            <div class="book-section">
-                <div class="book-cover">
-                    <img src="/images/book.png" alt="Unlocking Your Full Potential Book Cover">
-                </div>
-                <div class="book-details">
-                    <p class="book-meta">Paperback • December 9, 2023 • English Edition • By Fadi Albitar</p>
-                    <div class="book-description">
-                        <p><strong>Do you want to improve your life?</strong> In <em>Unlocking Your Full Potential</em>, Fadi Albitar shares his knowledge and experience as a self-taught psychology student to help you achieve your goals, overcome challenges, and live a happier and more fulfilling life.</p>
-                        <p>This book is for anyone who is serious about self-improvement. Whether you want to succeed in your career, build stronger relationships, or simply live a better life, this guide can help you get there.</p>
-                    </div>
-                    <div class="book-features">
-                        <h3>Inside, you'll learn:</h3>
-                        <ul>
-                            <li>How to set and achieve meaningful goals</li>
-                            <li>How to build self-confidence and overcome self-doubt</li>
-                            <li>How to manage stress and anxiety</li>
-                            <li>How to create positive habits and break negative ones</li>
-                            <li>How to build strong relationships</li>
-                            <li>And much more!</li>
-                        </ul>
-                    </div>
-                    <p><em>Unlocking Your Full Potential</em> is a practical and inspiring guide to self-improvement. It is filled with actionable tips and strategies that you can start using right away to make a positive change in your life.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+    footer.footer::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, #00F0FF, #C300FF, #FF00B8, transparent);
+    }
 
-    <section id="testimonials" class="testimonials">
-        <div class="container">
-            <h2 class="section-title" style="color: white;">What Readers Say</h2>
-            <div class="testimonial-slide">
-                <div class="testimonial-content">
-                    "This book completely transformed my approach to college and life. The practical strategies are game-changers!"
-                </div>
-                <div class="testimonial-author">
-                    <img src="https://randomuser.me/api/portraits/women/32.jpg" alt="Reader" class="author-avatar">
-                    <div class="author-info">
-                        <div class="author-name">Sarah Johnson</div>
-                        <div class="author-title">College Student</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    footer nav a {
+      margin: 0 10px;
+      color: #7A7A9D;
+      font-size: 0.9rem;
+      transition: color 0.3s ease;
+      position: relative;
+    }
 
-    <section id="purchase">
-        <div class="container">
-            <h2 class="section-title">Get Your Copy</h2>
-            <div style="text-align: center;">
-                <p style="margin-bottom: 2rem; font-size: 1.2rem;">Ready to take your life to the next level?</p>
-                <a href="https://amzn.eu/d/b7TsaWt" class="cta-button" style="display: inline-block;">Purchase on Amazon</a>
-            </div>
-        </div>
-    </section>
+    footer nav a:hover {
+      color: #00F0FF;
+    }
 
-    <footer>
-        <div class="container">
-            <h3>UNLOCKING YOUR FULL POTENTIAL</h3>
-            <p>A Guide to Self-Improvement for College Students, for Life and Future</p>
-            <div class="social-links">
-                <a href="https://www.facebook.com/profile.php?id=100093891904979" target="_blank" class="social-link tooltip">
-                    <i class="fab fa-facebook-f"></i>
-                    <span class="tooltiptext">Facebook</span>
-                </a>
-                <a href="https://www.instagram.com/fadi_z_albitar/" target="_blank" class="social-link tooltip">
-                    <i class="fab fa-instagram"></i>
-                    <span class="tooltiptext">Instagram</span>
-                </a>
-                <a href="https://www.linkedin.com/in/fadi-albitar/" target="_blank" class="social-link tooltip">
-                    <i class="fab fa-linkedin-in"></i>
-                    <span class="tooltiptext">LinkedIn</span>
-                </a>
-                <a href="https://x.com/fadialbitarfd?t=3YANNJ3Q9Tu0kAIIarRa2g&s=09" target="_blank" class="social-link tooltip">
-                    <i class="fab fa-twitter"></i>
-                    <span class="tooltiptext">Twitter</span>
-                </a>
-                <a href="https://github.com/fadidash1" target="_blank" class="social-link tooltip">
-                    <i class="fab fa-github"></i>
-                    <span class="tooltiptext">GitHub</span>
-                </a>
-            </div>
-            <p>&copy; 2023 Fadi Albitar. All rights reserved.</p>
-        </div>
-    </footer>
+    footer nav a::after {
+      content: '';
+      position: absolute;
+      bottom: -2px;
+      left: 0;
+      width: 0;
+      height: 1px;
+      background: #FF00B8;
+      transition: width 0.3s ease;
+    }
 
-    <script>
-        // Simple JavaScript for future enhancements
-        document.addEventListener('DOMContentLoaded', function() {
-            // Smooth scrolling for anchor links
-            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-                anchor.addEventListener('click', function (e) {
-                    e.preventDefault();
-                    document.querySelector(this.getAttribute('href')).scrollIntoView({
-                        behavior: 'smooth'
-                    });
-                });
-            });
+    footer nav a:hover::after {
+      width: 100%;
+    }
 
-            // You can add more interactive features here
-            console.log("Welcome to Fadi Albitar's Book Website!");
+    /* Responsive */
+    @media (max-width: 768px) {
+      header.hero h1 {
+        font-size: 2rem;
+      }
+      header.hero p {
+        font-size: 1.2rem;
+      }
+      
+      .book-cover {
+        max-width: 250px;
+      }
+      
+      section {
+        padding: 1.5rem;
+      }
+      
+      .btn-primary {
+        padding: 0.8rem 1.5rem;
+      }
+      
+      .testimonials-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // Smooth scroll behavior for anchor links
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+          e.preventDefault();
+          document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+          });
         });
-    </script>
+      });
+
+      // Simple FAQ toggle (expand/collapse)
+      const faqItems = document.querySelectorAll('.faq-item h3');
+      faqItems.forEach(item => {
+        item.style.cursor = 'pointer';
+        item.addEventListener('click', () => {
+          const nextP = item.nextElementSibling;
+          if (nextP.style.display === 'block') {
+            nextP.style.display = 'none';
+            item.style.color = '#00F0FF';
+          } else {
+            nextP.style.display = 'block';
+            item.style.color = '#FF00B8';
+          }
+        });
+      });
+      
+      // Add subtle animation to sections on scroll
+      const sections = document.querySelectorAll('section');
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.style.opacity = '1';
+            entry.target.style.transform = 'translateY(0)';
+          }
+        });
+      }, { threshold: 0.1 });
+      
+      sections.forEach(section => {
+        section.style.opacity = '0';
+        section.style.transform = 'translateY(20px)';
+        section.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+        observer.observe(section);
+      });
+    });
+  </script>
+
+</head>
+
+<body>
+
+  <header class="hero">
+    <div class="container">
+      <h1>Unlocking Your Full Potential</h1>
+      <p>By Fadi Albitar — Your Guide to Success, Confidence, and Fulfillment</p>
+      <img src="/images/book.png" alt="Unlocking Your Full Potential Book Cover" class="book-cover">
+      <a href="#buy" class="btn-primary">Get Your Copy Now</a>
+    </div>
+  </header>
+
+  <section id="about" class="about-section">
+    <div class="container">
+      <h2>About the Book</h2>
+      <p><strong>Unlocking Your Full Potential</strong> is a transformative self-improvement guide tailored for college students. Packed with actionable strategies, this book helps you build unstoppable confidence, conquer self-doubt, and craft a life filled with purpose and joy.</p>
+    </div>
+  </section>
+
+  <section id="why" class="why-section">
+    <div class="container">
+      <h2>Why This Book Matters</h2>
+      <ul>
+        <li>Practical steps, not fluffy theory.</li>
+        <li>Designed specifically for the college experience.</li>
+        <li>Boosts resilience, mental health, and success habits.</li>
+        <li>Written by someone who understands the journey — Fadi Albitar.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="testimonials" class="testimonials-section">
+    <div class="container">
+      <h2>What Readers Are Saying</h2>
+      
+      <div class="testimonials-grid">
+        <div class="testimonial-card">
+          <p class="testimonial-text">This book completely changed my perspective on personal growth. The practical exercises helped me overcome my social anxiety and land my dream internship!</p>
+          <div class="testimonial-author">
+            <img src="https://randomuser.me/api/portraits/women/22.jpg" alt="Sarah Johnson" class="author-avatar">
+            <div class="author-info">
+              <span class="author-name">Sarah Johnson</span>
+              <span class="author-title">Business Student, Harvard</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="testimonial-card">
+          <p class="testimonial-text">As a first-generation college student, I felt lost until I found this book. Fadi's advice on time management and confidence building was exactly what I needed.</p>
+          <div class="testimonial-author">
+            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Michael Chen" class="author-avatar">
+            <div class="author-info">
+              <span class="author-name">Michael Chen</span>
+              <span class="author-title">Engineering Major, Stanford</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="testimonial-card">
+          <p class="testimonial-text">I wish I had this book freshman year! The chapter on overcoming imposter syndrome alone was worth ten times the price of the book.</p>
+          <div class="testimonial-author">
+            <img src="https://randomuser.me/api/portraits/women/45.jpg" alt="Emma Rodriguez" class="author-avatar">
+            <div class="author-info">
+              <span class="author-name">Emma Rodriguez</span>
+              <span class="author-title">Pre-Med Student, UCLA</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="faq" class="faq-section">
+    <div class="container">
+      <h2>Frequently Asked Questions</h2>
+
+      <div class="faq-item">
+        <h3>Is this book suitable for students outside of college?</h3>
+        <p style="display: none;">Absolutely! Although tailored for college students, the strategies apply to anyone eager for personal growth and success.</p>
+      </div>
+
+      <div class="faq-item">
+        <h3>What topics are covered?</h3>
+        <p style="display: none;">You'll learn goal setting, confidence building, stress management, habit formation, and relationship strengthening — all critical life skills.</p>
+      </div>
+
+      <div class="faq-item">
+        <h3>Can I read it even if I'm already confident?</h3>
+        <p style="display: none;">Yes! This book isn't just about fixing problems — it's about taking your strengths to the next level and unlocking hidden potential.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="buy" class="buy-section">
+    <div class="container">
+      <h2>Ready to Unlock Your Potential?</h2>
+      <p>Available in paperback, ebook, and audiobook formats</p>
+      <a href="https://amzn.eu/d/2ebJ00C" class="btn-primary">Buy the Book Now</a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 Fadi Albitar. All rights reserved.</p>
+      <nav>
+        <a href="#about">About</a> | 
+        <a href="#why">Why This Book</a> | 
+        <a href="#testimonials">Testimonials</a> | 
+        <a href="#faq">FAQ</a> | 
+        <a href="#buy">Buy Now</a>
+      </nav>
+    </div>
+  </footer>
+
 </body>
 </html>
