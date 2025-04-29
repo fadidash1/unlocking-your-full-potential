@@ -747,20 +747,22 @@
       
       <div class="social-links">
         <a href="https://www.facebook.com/profile.php?id=100093891904979" target="_blank" class="social-link">f</a>
-        <a href="https://www.instagram.com/fadi_z_albitar/" target="_blank" class="social-link">in</a>
-  
+        <a href="#" target="_blank" class="social-link">in</a>
+        <a href="#" target="_blank" class="social-link">t</a>
+        <a href="#" target="_blank" class="social-link">yt</a>
       </div>
     </section>
 
     <section id="buy" class="section" style="text-align: center;">
       <h2>READY TO UNLOCK YOUR POTENTIAL?</h2>
-      <p>Available in paperback, ebook</p>
-      <a href="https://amzn.eu/d/bkvZSwz" class="btn">BUY NOW</a>
+      <p>Available in paperback, ebook, and audiobook formats</p>
+      <a href="https://amzn.eu/d/2ebJ00C" class="btn">BUY NOW</a>
     </section>
   </div>
 
   <footer>
     <p>&copy; 2023 Fadi Albitar. All rights reserved.</p>
+    <p>DESIGN BY HYKROX</p>
   </footer>
 
   <script>
